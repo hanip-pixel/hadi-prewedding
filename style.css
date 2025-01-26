@@ -76,6 +76,7 @@ body {
 
 .mynavbar .offcanvas {
   height: 100vh;
+  width: 260px;
   text-align: center;
 }
 
@@ -392,6 +393,10 @@ footer li {
   justify-content: center;
   align-items: center;
   line-height: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @keyframes rotating {
