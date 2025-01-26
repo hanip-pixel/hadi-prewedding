@@ -76,7 +76,7 @@ body {
 
 .mynavbar .offcanvas {
   height: 100vh;
-  width: 260px;
+  width: 250px;
   text-align: center;
 }
 
@@ -85,10 +85,6 @@ body {
   font-family: "Sacramento", cursive;
   font-size: 3.2rem;
   font-weight: bold;
-}
-
-.mynavbar .nav-link {
-  text-transform: uppercase;
 }
 
 .home {
@@ -395,10 +391,6 @@ footer li {
   line-height: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 @keyframes rotating {
   from {
     transform: rotate(0);
@@ -463,8 +455,20 @@ html {
     font-size: 65%;
   }
 
+  .mynavbar .navbar-brand {
+    font-size: 2.5rem;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    margin-right: 20px;
+  }
+
   .mynavbar .nav-link {
-    font-size: 2rem;
+    font-size: 14px;
   }
 
   .sticky-top {
@@ -481,6 +485,18 @@ html {
 @media (max-width: 576px) {
   html {
     font-size: 60%;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    margin-right: 10px;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 12px;
   }
 
   .timeline li .timeline-image {
